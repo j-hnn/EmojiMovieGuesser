@@ -25,6 +25,7 @@ if lives > 0:
         while lives > 0:
             guess = input("The movie is: ")
             if guess.lower() == answers[i]:
+                print("Correct! \n")
                 break
             else:
                 lives -= 1
@@ -33,7 +34,8 @@ if lives > 0:
                 continue
         if lives <= 0:
             break
+
 if lives > 0:
-    print("You won!")
+    print("\nYou won!")
 else:
-    print("You lost!")
+    print("\nYou lost!")
